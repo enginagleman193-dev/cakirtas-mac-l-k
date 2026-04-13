@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çakır Evden Eve Taşımacılık | Mersin</title>
+    <meta name="description" content="Mersin Çakır Evden Eve Nakliyat.Ferhat Çakır  güvencesiyle şehir içi ve şehirlerarası asansörlü, sigortalı taşıma. Fevzi Çakmak Mah. Mersin.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --brand-red: #cc0000;
+            --brand-dark: #222222;
+            --brand-gray: #f4f4f4;
+            --text-color: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--brand-dark);
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-red { background-color: var(--brand-red); color: white; }
+        .btn-red:hover { background-color: #a30000; }
+        
+        .btn-dark { background-color: var(--brand-dark); color: white; }
+        .btn-dark:hover { background-color: #000; }
+
+        .section-padding { padding: 60px 0; }
+
+        header {
+            background: white;
+            border-bottom: 2px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            height: 80px; 
+        }
+
+        .logo img { 
+            height: auto;
+            max-height: 65px; 
+            width: auto;
+        }
+
+        .nav-menu { 
+            display: flex; 
+            gap: 25px; 
+            align-items: center; 
+        }
+        
+        .nav-menu a { font-weight: 600; font-size: 15px; color: var(--brand-dark); }
+        .nav-menu a:hover { color: var(--brand-red); }
+
+        .nav-phones {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            line-height: 1.3;
+        }
+        .nav-phones a {
+            color: var(--brand-red);
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .mobile-toggle { 
+            display: none; 
+            font-size: 24px; 
+            cursor: pointer;
+            color: var(--brand-dark);
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            background-color: var(--brand-gray);
+            min-height: 500px; 
+            padding: 40px 0;
+        }
+
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px; color: var(--brand-dark); }
+        .hero-text span { color: var(--brand-red); }
+        .hero-text p { font-size: 1.1rem; margin-bottom: 30px; color: #555; }
+        .hero-buttons { display: flex; gap: 15px; }
+
+        .hero-image { flex: 1; position: relative; }
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 20px 20px 0px rgba(204, 0, 0, 0.1);
+            object-fit: cover;
+            max-height: 500px;
+        }
+
+        .features-bar { background-color: var(--brand-dark); color: white; padding: 30px 0; }
+        .features-container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center; }
+        .f-item i { color: var(--brand-red); font-size: 24px; margin-bottom: 10px; }
+        .f-item h4 { color: white; margin-bottom: 5px; font-size: 1.1rem; }
+        .f-item p { font-size: 0.9rem; color: #ccc; }
+
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+            margin-top: 40px; 
+        }
+        .service-box { 
+            background: white; 
+            border: 1px solid #eee; 
+            padding: 25px 20px;
+            transition: 0.3s; 
+            position: relative; 
+            overflow: hidden; 
+            text-align: center;
+        }
+        .service-box:hover { border-color: var(--brand-red); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .service-box i { font-size: 35px; color: var(--brand-red); margin-bottom: 15px; }
+        .service-box h3 { font-size: 1.1rem; margin-bottom: 10px; min-height: 40px; display:flex; align-items:center; justify-content:center; }
+        .service-box p { font-size: 0.9rem; }
+
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+        }
+
+        .slide {
+            min-width: 33.333%; 
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .slide img:hover { transform: scale(1.03); }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--brand-red);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .slider-btn:hover { background-color: #a30000; }
+        .prev-btn { left: 0px; }
+        .next-btn { right: 0px; }
+
+
+        .reviews-section { background-color: var(--brand-gray); }
+        .review-card { background: white; padding: 25px; border-radius: 8px; border-left: 5px solid var(--brand-red); margin-bottom: 20px; }
+        .stars { color: #f1c40f; margin-bottom: 10px; }
+        .reviewer { font-weight: bold; margin-top: 15px; font-size: 0.9rem; display: block; color: #666; }
+
+        .contact-layout { display: flex; flex-wrap: wrap; gap: 40px; }
+        .contact-details { flex: 1; }
+        .contact-map { flex: 1; height: 400px; background: #ddd; border-radius: 10px; overflow: hidden; }
+        .contact-row { display: flex; align-items: center; margin-bottom: 25px; font-size: 1.1rem; }
+        .contact-icon { width: 50px; height: 50px; background: var(--brand-red); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 15px; font-size: 20px; flex-shrink: 0; }
+
+        footer { background: #111; color: #888; padding: 30px 20px; text-align: center; font-size: 0.9rem; }
+        footer a { color: white; font-weight: bold; }
+
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 999; }
+
+        @media (max-width: 900px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .hero-wrapper { flex-direction: column-reverse; text-align: center; }
+            .hero-buttons { justify-content: center; }
+            .nav-menu { display: none; flex-direction: column; position: absolute; top: 80px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); border-top: 2px solid var(--brand-red); align-items: flex-start; }
+            .nav-menu.active { display: flex; }
+            .nav-phones { align-items: flex-start; margin-top: 15px; }
+            .mobile-toggle { display: block; }
+            .hero-text h1 { font-size: 2rem; }
+            .slide { min-width: 100%; } 
+            .services-grid { grid-template-columns: 1fr; }
+            .logo img { max-height: 55px; } 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#"><img src="Çakır.png" alt="Çakır Nakliyat"></a>
+            </div>
+            <div class="mobile-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <nav class="nav-menu">
+                <a href="#">Ana Sayfa</a>
+                <a href="#gallery">Galeri</a>
+                <a href="#services">Hizmetler</a>
+                <a href="#reviews">Yorumlar</a>
+                <a href="#contact">İletişim</a>
+                
+                <div class="nav-phones">
+                    <a href="tel:05364952529"><i class="fas fa-phone"></i> 0536 495 25 29</a>
+                    <a href="tel:05364952529"><i class="fas fa-mobile-alt"></i> 0536 495 25 29</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <h4>PROFESYONEL TAŞIMACILIK</h4>
+                <h1>Mersin'den Türkiye'nin <br><span>Her Yerine Taşıyoruz</span></h1>
+                <p>Çakır Nakliyat ile taşınmak stres değil, keyiftir.Ferhat Çakır  güvencesiyle, şehir içi ve şehirlerarası asansörlü taşımacılık hizmeti.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/905364952529?text=Merhaba,%20nakliye%20fiyat%c4%b1%20almak%20istiyorum." class="btn btn-red" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Fiyat Al
+                    </a>
+                    <a href="#contact" class="btn btn-dark">İletişime Geç</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="asansor_2.jpg" alt="Evden Eve Nakliyat">
+            </div>
+        </div>
+    </section>
+
+    <div class="features-bar">
+        <div class="container features-container">
+            <div class="f-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h4>81 İle Nakliyat</h4>
+                <p>Türkiye geneli hizmet.</p>
+            </div>
+            <div class="f-item">
+                <i class="fas fa-truck-loading"></i>
+                <h4>Asansörlü Sistem</h4>
+                <p>Yüksek katlara hasarsız transfer.</p>
+            </div>
+            <div class="f-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Sigortalı Taşıma</h4>
+                <p>Eşyalarınız tam güvence altında.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="gallery" class="section-padding" style="background-color: var(--brand-gray);">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; text-align: center;">Çalışmalarımızdan Kareler</h2>
+            
+            <div class="slider-container">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                
+                <div class="slider-wrapper">
+                    <div class="slide"><img src="asansor_2.jpg" alt="Asansörlü Taşıma"></div>
+                    <div class="slide"><img src="resim1.png" alt="Paketleme"></div>
+                    <div class="slide"><img src="asansor_2.jpg" alt="Asansör Aracı"></div>
+                    <div class="slide"><img src="resim2.png" alt="Ambalajlama"></div>
+                    <div class="slide"><img src="asansor_2.jpg" alt="Taşıma"></div>
+                    <div class="slide"><img src="resim3.png" alt="Paketleme"></div>
+                    <div class="slide"><img src="asansor_2.jpg" alt="Yük Asansörü"></div>
+                    <div class="slide"><img src="resim4.png" alt="Paketleme"></div>
+                    <div class="slide"><img src="asansor_2.jpg" alt="Asansör"></div>
+                    <div class="slide"><img src="resim5.png" alt="Eşya Paketleme"></div>
+                    <div class="slide"><img src="asansor_2.jpg" alt="Yüksek Kat"></div>
+                    <div class="slide"><img src="resim6.png" alt="Ambalaj"></div>
+                    <div class="slide"><img src="resim7.png" alt="Streçleme"></div>
+                    <div class="slide"><img src="resim8.png" alt="Koli Paketleme"></div>
+                    <div class="slide"><img src="resim9.png" alt="Mutfak Paketleme"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 10px;">Hizmetlerimiz</h2>
+            <p style="text-align: center; color:#666; max-width:600px; margin:0 auto; margin-bottom:30px;">Şehir içi ve şehirlerarası tüm nakliye ihtiyaçlarınız için profesyonel çözümler.</p>
+            
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fas fa-home"></i>
+                    <h3>Evden Eve Nakliyat</h3>
+                    <p>Mersin içi taşınmalarınızda uzman ekibimizle, mobilyalarınızı söküp takarak güvenle taşıyoruz.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-route"></i>
+                    <h3>Şehirlerarası Nakliyat</h3>
+                    <p>Mersin'den Türkiye'nin 81 iline sigortalı ve ambalajlı olarak, zamanında teslimat garantisiyle taşıyoruz.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-dolly"></i>
+                    <h3>Asansörlü Nakliyat</h3>
+                    <p>Yüksek katlara modüler asansör sistemimiz ile eşyalarınızı çizmeden, hızlı ve güvenli taşıyoruz.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-box"></i>
+                    <h3>Paketleme & Ambalaj</h3>
+                    <p>Kırılacak eşyalarınız, mobilyalarınız ve beyaz eşyalarınız için profesyonel paketleme hizmeti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section-padding">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Müşteri Yorumları</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Mersin'den İzmir'e taşınmamızda Ferhat Bey ve ekibi harika bir iş çıkardı. Şehirlerarası olmasına rağmen hiçbir eşyamız zarar görmedi."</p>
+                    <span class="reviewer">- Müşteri Yorumu <i class="fab fa-google" style="color:#4285F4; margin-left:5px;"></i></span>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Paketleme çok özenliydi. Asansörlü sistem sayesinde çok hızlı taşındık. Kesinlikle tavsiye ederim."</p>
+                    <span class="reviewer">- Müşteri Yorumu <i class="fab fa-google" style="color:#4285F4; margin-left:5px;"></i></span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top:20px;">
+                <a href="https://www.google.com/search?sca_esv=09d8ef1d6f832fe0&amp;hl=tr&amp;gl=tr&amp;sxsrf=ANbL-n5ZgzkSgxOpoe4ck3YeWTTc0oyxVA:1769437637874&amp;si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOXPwdEdDGqqjS9CzXxRGubwfg68dSupWQzpC-DRZw-m2f9YpxispqscO4LQBrLrT1BWKdBhVPL46vGEHbZjKE8u3k9gRSFJ0RTC6nB2CsgmhK0-FGfu1ZGBeTvzkoRR55WiRGJM%3D&amp;q=U%C5%9Fak+Çakır+Evden+Eve+Nakliyat+Yorumlar&amp;sa=X&amp;ved=2ahUKEwic-O3utKmSAxVMVPEDHe3GFsIQ0bkNegQIKxAH&amp;biw=1536&amp;bih=791&amp;dpr=1.25&amp;aic=0" target="_blank" style="text-decoration: underline; color: var(--brand-red); font-weight: bold;">Tüm Google Yorumlarını Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding" style="background-color: white;">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-details">
+                    <h2 style="margin-bottom: 20px;">Bize Ulaşın</h2>
+                    <p>Şehir içi ve şehirlerarası taşıma talepleriniz için arayın.</p>
+                    <br>
+                    <div class="contact-row">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Telefonlar:</strong><br>
+                            <a href="tel:05364952529" style="font-weight:bold; color:var(--text-color);">0536 495 25 29</a><br>
+                            <a href="tel:05364952529" style="font-weight:bold; color:var(--text-color);">0536 495 25 29</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <strong>WhatsApp:</strong><br>
+                            <a href="https://wa.me/905364952529" target="_blank" style="font-weight:bold; color:var(--text-color);">0536 495 25 29</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Adres:</strong><br>
+                            
+                            33230 MERKEZ/Mersin
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6038803.8340452295!2d29.842172824738633!3d38.96680778659895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e1!3m2!1str!2str!4v1776080869711!5m2!1str!2str" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Çakır Evden Eve Taşımacılık - Mersin</p>
+        <p style="margin-top:10px;"><a href="index.html">ferminedigital.com</a></p>
+        <p style="margin-top:10px; font-size:0.8rem;">
+            <a href="tel:05364952529">0536 495 25 29</a> | 
+            <a href="tel:05364952529">0536 495 25 29</a>
+        </p>
+    </footer>
+
+    <a href="https://wa.me/905364952529?text=Merhaba,%20nakliye%20bilgisi%20almak%20istiyorum." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        
+        let slideIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            const itemsPerView = window.innerWidth > 768 ? 3 : 1;
+            
+            if (slideIndex > totalSlides - itemsPerView) {
+                slideIndex = 0; 
+            }
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - itemsPerView; 
+            }
+
+            const percentage = 100 / itemsPerView;
+            sliderWrapper.style.transform = `translateX(-${slideIndex * percentage}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            slideIndex++;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            slideIndex--;
+            updateSlider();
+        });
+
+        window.addEventListener('resize', updateSlider);
+    </script>
+</body>
+
+</html>
